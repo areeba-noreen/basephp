@@ -1,0 +1,38 @@
+body {
+  margin: 0px auto;
+}
+.login-container {
+  display: table;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.login-container .form-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+.login-container .form-wrapper .field-group {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 5px 10px #888888;
+  text-align: center;
+  background-color: antiquewhite;
+}
+.login-container .form-wrapper .field-group .form-label {
+  font-size: 16px;
+  font-weight: 500;
+}
+.login-container .form-wrapper .field-group .form-input {
+  margin: 5px;
+}
+.login-container .form-wrapper .field-group .btn {
+  background-color: blue;
+  color: white;
+  padding: 5px 8px;
+  width: 90px;
+}
