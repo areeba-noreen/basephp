@@ -67,7 +67,7 @@ $result = $conn->query($sql);
                 ?>
             </table>
             <br>
-            <a class="btn" href="edit.php?add=1">Add New</a>
+            <a class="btn" href="add.php?add=1">Add New</a>
             </div>
         </div>   
     </div>
