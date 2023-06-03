@@ -1,7 +1,15 @@
 <?php
-if(username=="admin" && password=="text"){
+$username= $_GET['username'];
+$password= $_GET['password'];
+
+if($username=="admin" && $password=="test"){
     header('Location: http://localhost/basephp/dashboard.php?username=' . $username);
     exit;
+}
+else{
+    if(!empty($_GET)){
+    echo "Username or Password Incorrect !";
+    }
 }
 
 ?>

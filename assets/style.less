@@ -1,19 +1,20 @@
-body{
+body {
     margin: 0px auto;
 }
 
-.login-container{
+.login-container {
     display: table;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    
-    .form-wrapper{
+
+    .form-wrapper {
         display: table-cell;
         vertical-align: middle;
-        .field-group{
+
+        .field-group {
             margin-left: auto;
             margin-right: auto;
             width: 400px;
@@ -22,23 +23,47 @@ body{
             box-shadow: 5px 10px #888888;
             text-align: center;
             background-color: antiquewhite;
-           
-            .form-label{
+
+            .form-label {
                 font-size: 16px;
                 font-weight: 500;
-               // padding: 20px;
+                // padding: 20px;
             }
-            .form-input{
+
+            .form-input {
                 margin: 5px;
             }
-            .btn{
+
+            .btn {
                 background-color: blue;
                 color: white;
                 padding: 5px 8px;
                 width: 90px;
-                
+
             }
         }
     }
-    
+
+}
+
+.dashboard-head {
+    background-color: antiquewhite;
+    height: 78px;
+    padding: 5px;
+
+    .menu-wrapper {
+        float: right;
+
+        .user-heading {
+            display: inline-block;
+            text-transform: capitalize;
+        }
+
+        .logout {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            color: black;
+        }
+    }
 }

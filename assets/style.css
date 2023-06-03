@@ -36,3 +36,21 @@ body {
   padding: 5px 8px;
   width: 90px;
 }
+.dashboard-head {
+  background-color: antiquewhite;
+  height: 78px;
+  padding: 5px;
+}
+.dashboard-head .menu-wrapper {
+  float: right;
+}
+.dashboard-head .menu-wrapper .user-heading {
+  display: inline-block;
+  text-transform: capitalize;
+}
+.dashboard-head .menu-wrapper .logout {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  color: black;
+}
