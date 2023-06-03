@@ -42,6 +42,9 @@ body {
 .container .wrapper .field-group .form-input {
   margin: 5px;
 }
+.container .wrapper .field-group .btn-delete {
+  background-color: red !important;
+}
 .container .wrapper .field-group .btn {
   background-color: #151557;
   color: white;

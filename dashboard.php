@@ -51,11 +51,11 @@ $result = $conn->query($sql);
                                 <?php echo $row['fee']; ?>
                             </td>
                             <td>
-                                <a href="http://localhost/basephp/edit.php?id=<?php echo $row['id']; ?>">Edit</a>
+                                <a class="btn" href="http://localhost/basephp/edit.php?id=<?php echo $row['id']; ?>">Edit</a>
 
                             </td>
                             <td>
-                                <a href="http://localhost/basephp/delete.php?id=<?php echo $row['id']; ?>">Delete</a>
+                                <a class="btn-delete btn" href="http://localhost/basephp/delete.php?id=<?php echo $row['id']; ?>">Delete</a>
 
                             </td>
                         </tr>
