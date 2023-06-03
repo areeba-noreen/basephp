@@ -2,7 +2,7 @@ body {
     margin: 0px auto;
 }
 
-.login-container {
+.container {
     display: table;
     position: absolute;
     top: 0;
@@ -10,7 +10,7 @@ body {
     height: 100%;
     width: 100%;
 
-    .form-wrapper {
+    .wrapper {
         display: table-cell;
         vertical-align: middle;
 
@@ -24,6 +24,20 @@ body {
             text-align: center;
             background-color: antiquewhite;
 
+            table td {
+                padding: 5px;
+                font-size: 16px;
+                text-align: left;
+                border-bottom: 1px solid #888888;
+                border-left: 1px solid #888888;
+            }
+
+            table {
+                border: 1px solid #888888;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
             .form-label {
                 font-size: 16px;
                 font-weight: 500;
@@ -35,10 +49,11 @@ body {
             }
 
             .btn {
-                background-color: blue;
+                background-color: rgb(21, 21, 87);
                 color: white;
                 padding: 5px 8px;
                 width: 90px;
+                text-decoration: none;
 
             }
         }

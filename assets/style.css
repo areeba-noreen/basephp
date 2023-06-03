@@ -1,7 +1,7 @@
 body {
   margin: 0px auto;
 }
-.login-container {
+.container {
   display: table;
   position: absolute;
   top: 0;
@@ -9,11 +9,11 @@ body {
   height: 100%;
   width: 100%;
 }
-.login-container .form-wrapper {
+.container .wrapper {
   display: table-cell;
   vertical-align: middle;
 }
-.login-container .form-wrapper .field-group {
+.container .wrapper .field-group {
   margin-left: auto;
   margin-right: auto;
   width: 400px;
@@ -23,18 +23,31 @@ body {
   text-align: center;
   background-color: antiquewhite;
 }
-.login-container .form-wrapper .field-group .form-label {
+.container .wrapper .field-group table td {
+  padding: 5px;
+  font-size: 16px;
+  text-align: left;
+  border-bottom: 1px solid #888888;
+  border-left: 1px solid #888888;
+}
+.container .wrapper .field-group table {
+  border: 1px solid #888888;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .wrapper .field-group .form-label {
   font-size: 16px;
   font-weight: 500;
 }
-.login-container .form-wrapper .field-group .form-input {
+.container .wrapper .field-group .form-input {
   margin: 5px;
 }
-.login-container .form-wrapper .field-group .btn {
-  background-color: blue;
+.container .wrapper .field-group .btn {
+  background-color: #151557;
   color: white;
   padding: 5px 8px;
   width: 90px;
+  text-decoration: none;
 }
 .dashboard-head {
   background-color: antiquewhite;

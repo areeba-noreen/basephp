@@ -23,8 +23,8 @@ else{
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="form-wrapper">
+    <div class="container">
+        <div class="wrapper">
             <form action="">
                 <div class="field-group">
                     <div>
