@@ -10,8 +10,8 @@ if(!empty($_GET['rollnumber'])){
     $sql = "update tbl_student SET first_name='" . $first_name . "', last_name='" . $last_name . "', fee='" . $fee . "' where id=" . $id;
     //print_r($sql);
     $result = $conn->query($sql);
-    if (!empty($_GET['edit']) && $result) {
-        echo "Updated Succesfully";
+    if (!empty($result)) {
+        echo "Updated Succesfully!";
     }
 }
 
@@ -37,57 +37,53 @@ if (!empty($_GET['id'])){
 <body>
     <header class="dashboard-head">
         <div class="menu-wrapper">
-            <h3 class="user-heading"><?php //echo $first_name; ?></h3>
             <a class="logout btn"  href="index.html">Logout</a>
         </div>
     </header>
-
-        <div class="content">
-
+    <div class="container">
+        <div class="wrapper">
+            <div class="field-group">
             <form>
-                <div class="field-group">
-                    <lable>Roll Number</label>
-                        <input type="text" name="rollnumber" value="<?php echo $row['roll_num']; ?>" />
+                <div>
+                    <lable class="form-label">Roll Number</label>
+                        <input class="form-input" type="text" name="rollnumber" value="<?php echo $row['roll_num']; ?>" />
                 </div>
 
-                <div class="field-group">
-                    <lable>First Name</label>
-                        <input type="text" name="first_name" value="<?php echo $row['first_name']; ?>" />
+                <div>
+                    <lable class="form-label">First Name</label>
+                        <input class="form-input" type="text" name="first_name" value="<?php echo $row['first_name']; ?>" />
                 </div>
 
-                <div class="field-group">
-                    <lable>Last Name</label>
-                        <input type="text" name="last_name" value="<?php echo $row['last_name']; ?>" />
+                <div>
+                    <lable class="form-label">Last Name</label>
+                        <input class="form-input" type="text" name="last_name" value="<?php echo $row['last_name']; ?>" />
                 </div>
-                <div class="field-group">
-                    <lable>Fee</label>
-                        <input type="text" name="fee" value="<?php echo $row['fee']; ?>" />
+                <div>
+                    <lable class="form-label">Fee</label>
+                        <input class="form-input" type="text" name="fee" value="<?php echo $row['fee']; ?>" />
                 </div>
 
                 <br><br><br>
 
-                <div class="field-group ib">
+                <div>
                     <?php
                     if (!empty($_GET['id'])) {
                         ?>
                         <input type="hidden" name="id" value="<?php echo $row['id']; ?>" />
-                        <input type="hidden" name="edit" value="1" />
-                        <input type="submit" value="Update">
+                        <div>
+                        <input class="btn" type="submit" value="Update">
                         <?php
                     } else {
                         ?>
-
-                        <input type="hidden" name="add" value="1">
-                        <input type="submit" value="Add">
-
                         <?php
                     }
 
                     ?>
+                    <a class="btn"  href="dashboard.php">Goto Dashboard</a>
                 </div>
 
                 <div>
-                    <a class="btn" href="dashboard.php">Goto Dashboard</a>
+                    
                 </div>
 
             </form>

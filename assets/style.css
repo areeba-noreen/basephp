@@ -46,8 +46,9 @@ body {
   background-color: #151557;
   color: white;
   padding: 5px 8px;
-  width: 90px;
+  width: 110px;
   text-decoration: none;
+  border-bottom-style: none;
 }
 .dashboard-head {
   background-color: antiquewhite;
